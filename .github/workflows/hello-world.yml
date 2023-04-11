@@ -4,6 +4,5 @@ jobs:
   build:
     runs-on: ubuntu-latest
     steps:
-      - run: ls -lh
-      - run: cat Makefile
+      - uses: actions/checkout@v3
       - run: make say-hello
